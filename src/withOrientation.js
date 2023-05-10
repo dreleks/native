@@ -18,7 +18,7 @@ export default function(WrappedComponent) {
     }
 
     componentWillUnmount() {
-      this.dimensionsSubscription?.remove();
+      this.dimensionsSubscription.remove();
     }
 
     handleOrientationChange = ({ window }) => {
